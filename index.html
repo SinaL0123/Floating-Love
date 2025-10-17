@@ -14,6 +14,19 @@
             <img src="star.png" class="star">
             <img src="star.png" class="star">
         </div>
+        <div class="bgm">
+            <img id="bgm-icon" src="record.gif" width="150" height="auto" alt="record" class="record">
+            <audio id="bgm-music" loop>  <!-- allow user to pause and adjust volume-->
+                <source src="bgm.mp3" type="audio/mpeg">
+                <source src="bgm.ogg" type="audio/ogg">
+                <!-- only show up when  no support -->
+                Your brower does not support web audio but you can download the file <a href="bgm.mp3">here</a>
+            </audio>
+        </div>
+        <div class="controls">
+            <input id="newQuote" type="text" placeholder="Type your quote..." />
+            <button id="addQuote" type="button">Add</button>
+        </div>
         <div class="stage">
             <div class="quote q1"><span>Love is the quiet courage to stay.</span></div>
             <div class="quote q2"><span>In your light, I learn how to glow.</span></div>
