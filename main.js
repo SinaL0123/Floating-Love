@@ -195,8 +195,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Click handler for adding quotes in sequential order
   window.addEventListener("click", (e) => {
-    // Don't trigger on input/button clicks
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'BUTTON') return;
+    // Don't trigger on input/button/record icon clicks
+    if (e.target.tagName === 'INPUT' || 
+        e.target.tagName === 'BUTTON' || 
+        e.target.id === 'bgm-icon') return;
     
     const currentQuote = existingQuotes[currentQuoteIndex];
     window.addQuote(currentQuote);
